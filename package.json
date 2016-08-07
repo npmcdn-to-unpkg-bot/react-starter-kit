@@ -1,0 +1,15 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christine Brass <cybrass@gmail.com>",
+  "license": "MIT"
+}
