@@ -11,7 +11,11 @@
 
   <script type="text/babel">
     ReactDOM.render(
-      <div>Hello, World!</div>,
+      React.createElement(
+        "div",            // name of tag to use
+        null,             // optional "props"
+        "Hello, React!"   // content of div
+      ),
       document.getElementById("container")
     )
   </script>
