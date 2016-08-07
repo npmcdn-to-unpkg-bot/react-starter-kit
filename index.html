@@ -14,7 +14,12 @@
       React.createElement(
         "div",            // name of tag to use
         null,             // optional "props"
-        "Hello, React!"   // content of div
+        React.createElement(
+          "i",
+          null,
+          "Hello"
+        ),
+        ", React!"
       ),
       document.getElementById("container")
     )
