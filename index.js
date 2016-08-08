@@ -2,13 +2,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <i>Hello,</i> from inside an ES6 React Class!
+        Hello, {this.props.name}!
       </div>
     );
   }
 }
 
 ReactDOM.render(
-  <App />,
+  React.createElement(App, {name: "WWCode"}),
   document.getElementById("container")
 )
