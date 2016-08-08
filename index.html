@@ -10,14 +10,19 @@
   </div>
 
   <script type="text/babel">
+
+    class App extends React.Component {
+      render() {
+        return (
+          <div>
+            <i>Hello,</i> from inside an ES6 React Class!
+          </div>
+        );
+      }
+    }
+
     ReactDOM.render(
-      React.createElement(
-        React.createClass({
-          render: function () {
-            return <div><i>Hello,</i> from inside a React Class!</div>;
-          }
-        })
-      ),
+      <App />,
       document.getElementById("container")
     )
   </script>
