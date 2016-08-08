@@ -10,17 +10,9 @@
   </div>
 
   <script type="text/babel">
+    const reactElement = <div><i>Hello,</i> React!</div>;
     ReactDOM.render(
-      React.createElement(
-        "div",            // name of tag to use
-        null,             // optional "props"
-        React.createElement(
-          "i",
-          null,
-          "Hello"
-        ),
-        ", React!"
-      ),
+      reactElement,
       document.getElementById("container")
     )
   </script>
