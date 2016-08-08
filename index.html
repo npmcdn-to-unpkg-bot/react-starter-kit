@@ -10,9 +10,14 @@
   </div>
 
   <script type="text/babel">
-    const reactElement = <div><i>Hello,</i> React!</div>;
     ReactDOM.render(
-      reactElement,
+      React.createElement(
+        React.createClass({
+          render: function () {
+            return <div><i>Hello,</i> from inside a React Class!</div>;
+          }
+        })
+      ),
       document.getElementById("container")
     )
   </script>
